@@ -1,0 +1,12 @@
+{
+  "name": "reaction-speed-test",
+  "version": "1.0.0",
+  "description": "반응속도 테스트 Railway 배포",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
