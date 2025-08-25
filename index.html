@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>반응속도 테스트 ⚡️</title>
+
+  <!-- 다크 테마 CSS -->
+  <link rel="stylesheet" href="여게이.css" />
+
+  <!-- Chart.js (그래프) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>반응속도 테스트 ⚡️</h1>
+    <p id="hint">START 버튼을 누르면 시험이 시작됩니다.</p>
+    <p id="counter">도전 횟수: 0 / 5</p>
+
+    <!-- 반응 패널 -->
+    <div id="panel" class="ready">READY</div>
+
+    <!-- 컨트롤 버튼 -->
+    <div class="actions">
+      <button id="startBtn">START</button>
+      <button id="resetBtn">RESET</button>
+    </div>
+
+    <!-- 결과 텍스트 -->
+    <p id="result">결과가 여기에 표시됩니다.</p>
+
+    <!-- 반응 속도 그래프 -->
+    <section id="chartSection" style="display:none;">
+      <canvas id="rtChart" height="140"></canvas>
+    </section>
+
+    <!-- 리더보드 -->
+    <section class="leaderboard-box">
+      <h2>🏆 리더보드</h2>
+      <div class="name-input">
+        <input id="playerName" type="text" placeholder="플레이어 이름 입력" />
+        <button id="saveBtn">저장</button>
+      </div>
+      <ul id="leaderboard"></ul>
+    </section>
+  </main>
+
+  <!-- 기능 스크립트 -->
+  <script src="app.js" defer></script>
+</body>
+</html>
